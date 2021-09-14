@@ -1,0 +1,17 @@
+<!-- Sidebar -->
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">
+        Gifs App
+    </h3>
+    <hr class="text-white">
+
+    <div class="list-group list-reset">
+        <!-- Obtiene todo lo almacenado en historial y con el metodo click busca el item y lo muestra en los resultados por el metodo buscarGifs en el servicio -->
+        <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action" (click)="buscar(item)">
+            <!-- Texto con letra capitalizada -->
+            {{item | titlecase }}
+        </a>
+    </div>
+</div>
+
+<!-- END Sidebar -->
